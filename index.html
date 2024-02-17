@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>    
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="tailwind.config.js"></script>
+    <script src="tailwind.config.js"></script>   
 </head>
-<body>
+<body class="px-10">
     <nav>
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -16,53 +16,85 @@
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
-                </ul>
+              
               </div>
-              <a class="btn btn-ghost text-xl">daisyUI</a>
+              <a class="btn btn-ghost text-xl">P-Ticket</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
-                <li><a>Item 1</a></li>
-                <li>
-                  <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </details>
-                </li>
-                <li><a>Item 3</a></li>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destinatione</a></li>
+                <li><a>Search</a></li>
               </ul>
             </div>
-            <div class="navbar-end">
-              <a class="btn">Button</a>
+            <div class="navbar-end ">
+              <a class="btn text-lime-400 border-lime-400 rounded-md border-2 bg-green-100"><span>Bus </span><img src="/images/bus-icon.png" alt=""></a>
             </div>
           </div>          
     </nav>
     <main>
-<section class="banner-section">
-    <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content text-center">
-          <div class="max-w-md">
-            <h1 class="text-5xl font-bold">Hello there</h1>
-            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <button class="btn btn-primary">Get Started</button>
-          </div>
+<section class="banner-section lg:h-[500px] rounded-3xl ">
+  
+    <div class="hero  object-cover " style="background-image: url(/images/banner.png); height: 500px;">
+      <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+      <div class="hero-content text-center text-neutral-content ">
+        <div class="w-full">
+          <h1 class="mb-5 text-5xl font-bold text-white">End-to-End Travel with </h1>
+          <h1 class="mb-5 text-5xl font-bold text-lime-500">P Paribahan</h1>
+          <p class="mb-5">Yes, you can run unit tests and view the <br> results directly within the app. The
+            integrated testing features allow for a streamlined .</p>
+          <button class="btn border-transparent text-black bg-lime-500">Buy Tickets</button>
         </div>
       </div>
+    </div>
+ 
+ 
 </section>
-<section></section>
+<section class="mt-8 w-full">
+  <h2 class="font-bold text-5xl text-center">Best offers for you</h2>
+ 
+  <div class="flex gap-6 mt-12 justify-center">
+    <div
+      class="bg-[#FFBF0F] flex w-[488px] rounded-lg justify-center items-center"
+    >
+      <p class="mr-14">
+        <span class="font-extrabold text-4xl">15% OFF</span> <br /><span
+          class="font-semibold"
+          >on your next purchase </span
+        ><br />
+        <span class="text-slate-500">use by January 2024</span>
+      </p>
+      <img src="images/cupon-devider.png" alt="cupon-devider" />
+      <p class="ml-9">
+        <span class="font-bold text-2xl">NEW15</span> <br /><span
+          class="text-slate-500"
+          >Coupon Code</span
+        >
+      </p>
+    </div>
+    <div
+      class="bg-[#F78C9C] flex w-[488px] rounded-lg justify-center items-center"
+    >
+      <p class="mr-14">
+        <span class="font-extrabold text-4xl">20% OFF</span> <br /><span
+          class="font-semibold"
+          >on your next purchase </span
+        ><br />
+        <span class="text-slate-500">use by January 2024</span>
+      </p>
+      <img src="images/cupon-devider.png" alt="cupon-devider" />
+      <p class="ml-9">
+        <span class="font-bold text-2xl">Couple 20</span> <br /><span
+          class="text-slate-500"
+          >Coupon Code</span
+        >
+      </p>
+    </div>
+  </div>
+  <div class="w-full p-4 flex justify-center "><a class="btn " style="color: rgb(33, 204, 70);  border: 2px solid rgb(65, 231, 65);">See All Offers</a></div>
+  
+</section>
 <section></section>
     </main>
     <footer>
