@@ -1,106 +1,141 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>    
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="tailwind.config.js"></script>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="tailwind.config.js"></script>
 </head>
+
 <body class="px-10">
-    <nav>
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-              
-              </div>
-              <a class="btn btn-ghost text-xl">P-Ticket</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Destinatione</a></li>
-                <li><a>Search</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end ">
-              <a class="btn text-lime-400 border-lime-400 rounded-md border-2 bg-green-100"><span>Bus </span><img src="/images/bus-icon.png" alt=""></a>
-            </div>
-          </div>          
-    </nav>
-    <main>
-<section class="banner-section lg:h-[500px] rounded-3xl ">
-  
-    <div class="hero  object-cover " style="background-image: url(/images/banner.png); height: 500px;">
-      <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
-      <div class="hero-content text-center text-neutral-content ">
-        <div class="w-full">
-          <h1 class="mb-5 text-5xl font-bold text-white">End-to-End Travel with </h1>
-          <h1 class="mb-5 text-5xl font-bold text-lime-500">P Paribahan</h1>
-          <p class="mb-5">Yes, you can run unit tests and view the <br> results directly within the app. The
-            integrated testing features allow for a streamlined .</p>
-          <button class="btn border-transparent text-black bg-lime-500">Buy Tickets</button>
+  <nav>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+
         </div>
+        <a class="btn btn-ghost text-xl">P-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destinatione</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end ">
+        <a class="btn text-lime-400 border-lime-400 rounded-md border-2 bg-green-100"><span>Bus </span><img
+            src="/images/bus-icon.png" alt=""></a>
       </div>
     </div>
- 
- 
-</section>
-<section class="mt-8 w-full">
-  <h2 class="font-bold text-5xl text-center">Best offers for you</h2>
- 
-  <div class="flex gap-6 mt-12 justify-center">
-    <div
-      class="bg-[#FFBF0F] flex w-[488px] rounded-lg justify-center items-center"
-    >
-      <p class="mr-14">
-        <span class="font-extrabold text-4xl">15% OFF</span> <br /><span
-          class="font-semibold"
-          >on your next purchase </span
-        ><br />
-        <span class="text-slate-500">use by January 2024</span>
-      </p>
-      <img src="images/cupon-devider.png" alt="cupon-devider" />
-      <p class="ml-9">
-        <span class="font-bold text-2xl">NEW15</span> <br /><span
-          class="text-slate-500"
-          >Coupon Code</span
-        >
-      </p>
-    </div>
-    <div
-      class="bg-[#F78C9C] flex w-[488px] rounded-lg justify-center items-center"
-    >
-      <p class="mr-14">
-        <span class="font-extrabold text-4xl">20% OFF</span> <br /><span
-          class="font-semibold"
-          >on your next purchase </span
-        ><br />
-        <span class="text-slate-500">use by January 2024</span>
-      </p>
-      <img src="images/cupon-devider.png" alt="cupon-devider" />
-      <p class="ml-9">
-        <span class="font-bold text-2xl">Couple 20</span> <br /><span
-          class="text-slate-500"
-          >Coupon Code</span
-        >
-      </p>
-    </div>
-  </div>
-  <div class="w-full p-4 flex justify-center "><a class="btn " style="color: rgb(33, 204, 70);  border: 2px solid rgb(65, 231, 65);">See All Offers</a></div>
-  
-</section>
-<section></section>
-    </main>
-    <footer>
+  </nav>
+  <main>
+    <section class="banner-section lg:h-[500px] rounded-3xl overflow-hidden ">
 
-    </footer>
-    
-   
+      <div class="hero  object-cover " style="background-image: url(/images/banner.png); height: 500px;">
+        <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+        <div class="hero-content text-center text-neutral-content ">
+          <div class="w-full">
+            <h1 class="mb-5 text-5xl font-bold text-white">End-to-End Travel with </h1>
+            <h1 class="mb-5 text-5xl font-bold text-lime-500">P Paribahan</h1>
+            <p class="mb-5">Yes, you can run unit tests and view the <br> results directly within the app. The
+              integrated testing features allow for a streamlined .</p>
+            <button class="btn border-transparent text-black bg-lime-500">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <section class="mt-8 w-full ">
+      <h2 class="font-bold text-5xl text-center">Best offers for you</h2>
+
+      <div class="flex gap-6 mt-12 justify-center">
+        <div class="bg-[#FFBF0F] flex w-[488px] rounded-lg justify-center items-center">
+          <p class="mr-14">
+            <span class="font-extrabold text-4xl">15% OFF</span> <br /><span class="font-semibold">on your next purchase
+            </span><br />
+            <span class="text-slate-500">use by January 2024</span>
+          </p>
+          <img src="images/cupon-devider.png" alt="cupon-devider" />
+          <p class="ml-9">
+            <span class="font-bold text-2xl">NEW15</span> <br /><span class="text-slate-500">Coupon Code</span>
+          </p>
+        </div>
+        <div class="bg-[#F78C9C] flex w-[488px] rounded-lg justify-center items-center">
+          <p class="mr-14">
+            <span class="font-extrabold text-4xl">20% OFF</span> <br /><span class="font-semibold">on your next purchase
+            </span><br />
+            <span class="text-slate-500">use by January 2024</span>
+          </p>
+          <img src="images/cupon-devider.png" alt="cupon-devider" />
+          <p class="ml-9">
+            <span class="font-bold text-2xl">Couple 20</span> <br /><span class="text-slate-500">Coupon Code</span>
+          </p>
+        </div>
+      </div>
+      <div class="w-full p-4 flex justify-center mt-8"><a class="btn "
+          style="color: rgb(33, 204, 70);  border: 2px solid rgb(65, 231, 65);">See All Offers</a></div>
+
+    </section>
+    <section class="main-section h-[1000px] items-center  flex gap-3 flex-col w-full border-t-4 border-green-400 rounded-3xl mt-4 bg-[#F7F8F8]" >
+           <div class="contect w-full h-48  m-4">
+                    <h1 class="text-4xl font-bold text-center p-6">P.H Paribahan</h1>
+                    <p class=" text-center text-slate-400 ">Yes, you can run unit tests and view the results directly within the app. The integrated <br>
+                      testing features allow for a streamlined .</p>
+           </div>
+           <div class="timestamp h-[350px] bg-white w-3/4 rounded-lg p-5 flex ">
+            <div class="part-one w-[70%]">
+              <div class="cont flex justify-between">
+                <div class="flex  gap-2"> <img src="/images/bus-logo.png" alt="" class=" inline-block"> <p class=""><span class="font-bold text-2xl">Greenline Paribahan </span><br>Coach-009-WEB ! AC_Business  </p></div>
+                <div> <button class="btn text-green-400 "> <img src="/images/seat-green.png" alt="" srcset=""> 40 Seats left</button></div>
+              </div>
+              <div class=" w-full bg-[#F7F8F8] h-full p-3 rounded-lg mt-4">
+                   <div class="flex justify-between text-2xl pb-3"> <p>Route</p> <p>Dhaka - Sylhet</p></div>
+                   <hr class="w-full pt-6" style="border-top: 1px dashed rgb(49, 49, 49)">
+                   <div class="flex justify-between text-2xl pb-3"> <p>Departure Time</p> <p>9:00 PM</p></div>
+                   <hr class="w-full pt-6" style="border-top: 1px dashed rgb(49, 49, 49)">
+                   <div class="flex justify-around text-2xl pb-3">
+                   <div class="btn ">Boarding Point - Laxmipur</div>
+                   <div class="btn ">Dropping Point - Bogura</div>
+                   <div class="btn ">Est. Time - 11 Hour</div>
+                  </div>
+              </div>
+
+            </div>
+            <div class="part-two w-[30%] flex flex-col justify-center text-center items-center">
+              <img src="/images/fare.png" class="w-16">
+              <p class="text-4xl font-bold">550 Taka <br><span class="text-slate-400 text-2xl">Per Seat</span></p>
+              
+            </div>
+           </div>
+           <div class="main-content">
+            <div class="part-one">
+              <div class="one"></div>
+            <div class="two"></div>
+            </div>
+            <div class="part-two">
+              <div class="one"></div>
+            <div class="two"></div>
+            </div>
+           </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+
+
 </body>
+
 </html>
