@@ -43,6 +43,7 @@ buttons.forEach(function (button) {
             thirdP.innerHTML="550"
             totalPrice+=550
             totalPriceValue.innerHTML=totalPrice;
+             
             
         }
         if (add == 2) {
@@ -74,11 +75,25 @@ buttons.forEach(function (button) {
             thirdP.innerHTML="550"
             totalPrice+=550
             totalPriceValue.innerHTML=totalPrice;
+            applyDis.removeAttribute("disabled")
+            disInput.removeAttribute("disabled")
+
+            applyDis.addEventListener("click",function(){
+                let inputValue = disInput.value;
+                if (inputValue === "NEW15") {
+                   let parsentcal = 15*totalPrice/100;
+                   let discaunt = totalPrice - parsentcal;
+
+                   console.log(parseFloat(parsentcal))
+                   console.log(parseFloat(discaunt))
+                }
+            })
         }
 
     }
     })
-   
+    
 });
+
 
 
