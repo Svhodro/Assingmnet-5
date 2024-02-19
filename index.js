@@ -51,11 +51,7 @@ buttons.forEach(function (button) {
                 thirdP.innerHTML = "550"
                 totalPrice += 550
                 totalPriceValue.innerHTML = totalPrice;
-                // let phone = numberInput;  
-                // console.log(phone.value)               
-                // // if (phone!=="") {
-                // //     nextBtn.removeAttribute("disabled");
-                // // }
+                grandTotal.innerHTML = totalPrice;              
                 click = true;
                 
 
@@ -69,6 +65,7 @@ buttons.forEach(function (button) {
                 thirdP.innerHTML = "550"
                 totalPrice += 550
                 totalPriceValue.innerHTML = totalPrice;
+                grandTotal.innerHTML = totalPrice;
             }
             if (add == 3) {
                 let fastP = document.querySelector('.set3 :nth-child(1)')
@@ -79,6 +76,7 @@ buttons.forEach(function (button) {
                 thirdP.innerHTML = "550"
                 totalPrice += 550
                 totalPriceValue.innerHTML = totalPrice;
+                grandTotal.innerHTML = totalPrice;
             }
             if (add == 4) {
                 let fastP = document.querySelector('.set4 :nth-child(1)')
