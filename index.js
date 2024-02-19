@@ -34,6 +34,7 @@ buttons.forEach(function (button) {
         if (add <= 3) {
             add++
             button.style.backgroundColor = "green";
+            button.classList.add("text-white");
             badghValue.innerHTML = add;
             let setabal = 40 - add;
             freeSeatValue.innerHTML = setabal;
@@ -104,7 +105,7 @@ buttons.forEach(function (button) {
                         alart.classList.add("hidden");
                         
                     }else if (inputValue === "Couple20") {
-                            let parsentcal = 15 * totalPrice / 100;
+                            let parsentcal = 20 * totalPrice / 100;
                             let discaunt = totalPrice - parsentcal;
                             document.querySelector(".set5 :nth-child(1)").innerHTML = "discount";
                             document.querySelector(".set5 :nth-child(2)").innerHTML = parsentcal;
