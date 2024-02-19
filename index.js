@@ -19,6 +19,7 @@ let setFour = document.querySelector(".set4");
 let setFive = document.querySelector(".set5")
 let freeSeatValue = document.querySelector(".Freeseat");
 let alart = document.querySelector(".alart");
+let grandTotal = document.querySelector(".grand")
 
 //add event on this button
 let add = 0;
@@ -88,6 +89,7 @@ buttons.forEach(function (button) {
                 thirdP.innerHTML = "550"
                 totalPrice += 550
                 totalPriceValue.innerHTML = totalPrice;
+                grandTotal.innerHTML = totalPrice;
                 applyDis.removeAttribute("disabled")
                 disInput.removeAttribute("disabled")
                                
