@@ -18,16 +18,18 @@ let setThree = document.querySelector(".set3");
 let setFour = document.querySelector(".set4");
 let setFive = document.querySelector(".set5")
 let freeSeatValue = document.querySelector(".Freeseat");
-
+let alart = document.querySelector(".alart");
 
 //add event on this button
 let add = 0;
 let totalPrice = 0;
+let click;
+
 
 buttons.forEach(function (button) {
 
     button.addEventListener("click", function (buton) {
-
+        
 
         if (add <= 3) {
             add++
@@ -35,6 +37,9 @@ buttons.forEach(function (button) {
             badghValue.innerHTML = add;
             let setabal = 40 - add;
             freeSeatValue.innerHTML = setabal;
+            
+           
+
             if (add == 1) {
                 let fastP = document.querySelector('.set1 :nth-child(1)')
                 let secondP = document.querySelector('.set1 :nth-child(2)')
@@ -44,7 +49,13 @@ buttons.forEach(function (button) {
                 thirdP.innerHTML = "550"
                 totalPrice += 550
                 totalPriceValue.innerHTML = totalPrice;
-
+                // let phone = numberInput;  
+                // console.log(phone.value)               
+                // // if (phone!=="") {
+                // //     nextBtn.removeAttribute("disabled");
+                // // }
+                click = true;
+                
 
             }
             if (add == 2) {
@@ -78,6 +89,7 @@ buttons.forEach(function (button) {
                 totalPriceValue.innerHTML = totalPrice;
                 applyDis.removeAttribute("disabled")
                 disInput.removeAttribute("disabled")
+                               
 
                 applyDis.addEventListener("click", function () {
                     let inputValue = disInput.value;
@@ -89,6 +101,7 @@ buttons.forEach(function (button) {
                         document.querySelector(".Grand :nth-child(2)").innerHTML = discaunt;
                         let inputDiv = document.querySelector(".lable")
                         inputDiv.classList.add("hidden")
+                        alart.classList.add("mystyle");
                         
                     }else if (inputValue === "Couple20") {
                             let parsentcal = 15 * totalPrice / 100;
@@ -98,19 +111,35 @@ buttons.forEach(function (button) {
                             document.querySelector(".Grand :nth-child(2)").innerHTML = discaunt;
                             let inputDiv = document.querySelector(".lable")
                             inputDiv.classList.add("hidden")
+                            alart.classList.add("mystyle");
                            
                         } else {
-                            let alart = document.querySelector(".alart");
-                            console.log(alart);
-                            alart.classList.remove("hidden")
-                            alart
-                        }
+                                                      
+                         alart.classList.remove("hidden");                            
+                        }                      
+                        
+                       
+                       
                     })
             }
 
+            
+
         }
+        // if(click==true && namvalue == null  ){}
+        //       console.log(namvalue)
+        //    nextBtn.removeAttribute("disabled");
     })
 
 });
 
 
+numberInput.addEventListener("change", ()=>{
+    let input =parseInt(numberInput.value);
+    let goOne= Number.isInteger(input)
+    console.log(goOne);
+       if (click!== false && numberInput.value.length <= 11 && goOne !== false ) {
+          nextBtn.removeAttribute("disabled");        
+       }
+       
+})

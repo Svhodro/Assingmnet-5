@@ -264,7 +264,7 @@
               </div>
                 <div class="flex justify-between font-bold Grand  pt-3">
                   <p>Grand Total</p>
-                  <p>BDT<span>1100</span></p>
+                  <p>BDT :<span>0</span></p>
                 </div>
                     
                 <div class="two"></div>
@@ -287,8 +287,23 @@
                 <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
 
               </div>
-              <div class="flex  justify-center items-center">
-                <div class="btn btn-success next text-white w-3/4">Next</div>
+              <div class="flex  justify-center items-center ">
+                <div class="btn btn-success next text-white w-3/4 "disabled="disabled"onclick="my_modal_1.showModal()">Next</div>
+                <!-- Open the modal using ID.showModal() method -->                
+                <dialog id="my_modal_1" class="modal">
+                  <div class="modal-box bg-white flex justify-center flex-col text-center items-center">
+                    <img src="/images/success.png" alt="" class="w-16">
+                    <h3 class="font-bold text-lg text-green-500">SUCCESS</h3>
+                    <p class="py-2 font-bold">Thank you for Booking Our Bus <br> We are working hard to find the best service and deals for you.</p>
+                    <p class="pb-2">Shortly you will find a confirmation in your email.</p>                   
+                    <div class="modal-action flex justify-center flex-col">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn text-white btn-success rounded-lg">Continue</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
               </div>
               <div class="flex  justify-center items-center gap-4">
                 <a href="" class="underline">Terms and Conditions</a>
