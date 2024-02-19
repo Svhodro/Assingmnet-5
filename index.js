@@ -101,7 +101,7 @@ buttons.forEach(function (button) {
                         document.querySelector(".Grand :nth-child(2)").innerHTML = discaunt;
                         let inputDiv = document.querySelector(".lable")
                         inputDiv.classList.add("hidden")
-                        alart.classList.add("mystyle");
+                        alart.classList.add("hidden");
                         
                     }else if (inputValue === "Couple20") {
                             let parsentcal = 15 * totalPrice / 100;
@@ -112,6 +112,7 @@ buttons.forEach(function (button) {
                             let inputDiv = document.querySelector(".lable")
                             inputDiv.classList.add("hidden")
                             alart.classList.add("mystyle");
+                            alart.classList.add("hidden");
                            
                         } else {
                                                       
